@@ -1,0 +1,22 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes shimmer {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.text-gold-shimmer {
+  background: linear-gradient(90deg, #FFD700, #FFF, #FFD700);
+  background-size: 200%;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 3s infinite linear;
+}
+

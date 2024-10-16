@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "yanode_icp_backend": {
+      "main": "src/yanode_icp_backend/main.mo",
+      "type": "motoko"
+    },
+    "yanode_icp_frontend": {
+      "dependencies": [
+        "yanode_icp_backend"
+      ],
+      "source": [
+        "src/yanode_icp_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "yanode_icp_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
